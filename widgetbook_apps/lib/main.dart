@@ -18,6 +18,27 @@ class MainApp extends StatelessWidget {
       // The [directories] variable does not exist yet,
       // it will be generated in the next step
       directories: directories,
+      addons: [
+        TextScaleAddon(
+          scales: [1.0, 2.0],
+        ),
+        LocalizationAddon(
+          locales: [
+            const Locale('en', 'US'),
+          ],
+          localizationsDelegates: [
+            DefaultWidgetsLocalizations.delegate,
+            DefaultMaterialLocalizations.delegate,
+          ],
+        ),
+        DeviceFrameAddon(
+          devices: [
+            Devices.ios.iPhoneSE,
+            Devices.ios.iPhone13,
+          ],
+        ),
+        GridAddon(),
+      ],
     );
   }
 }
