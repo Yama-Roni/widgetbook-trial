@@ -55,7 +55,7 @@ Widget buildCoolButtonUseCase2(BuildContext context) {
       title: const Text(
         'Scaffold',
       ),
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.green,
     ),
     body: SizedBox(
       width: double.infinity,
