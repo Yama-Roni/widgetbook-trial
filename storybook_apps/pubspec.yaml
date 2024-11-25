@@ -10,12 +10,16 @@ dependencies:
   flutter:
     sdk: flutter
   storybook_flutter: ^0.14.1
+  widgetbook_trial:
+    path: ../
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
-  storybook_flutter_test: ^0.1.0+2
+  storybook_flutter_test:
+    git:
+      url: https://github.com/Logique-ID/storybook_flutter_test.git
 
 flutter:
   uses-material-design: true
